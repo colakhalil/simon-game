@@ -71,7 +71,7 @@ function show_array(order_index){
       order_index++;
       show_array(order_index);
 
-    }, 400);
+    }, 600);
 }}
 
 function clicked(button){
