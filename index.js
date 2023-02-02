@@ -51,7 +51,7 @@ function playGame(){
     else if(user_order.length === order.length && order.length !== 0){
       user_index = -1;
       user_order = [];
-      $("#level-title").text("level " + order.length);
+      $("#level-title").text("level " + (order.length + 1));
       order.push(Math.floor((Math.random() * 4)) + 1);
       show_array(0);
     }
@@ -71,7 +71,7 @@ function show_array(order_index){
       order_index++;
       show_array(order_index);
 
-    }, 600);
+    }, 700);
 }}
 
 function clicked(button){
